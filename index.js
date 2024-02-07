@@ -1,7 +1,7 @@
 import { CardBinder } from "./card.js";
 
 let smallwidth = getComputedStyle(document.documentElement).getPropertyValue('--smallwidth')
-alert("halo")
+
 //HERO SECTION
 var hero_section = document.getElementById("hero")
 var textWrapper = hero_section.getElementsByClassName("textwrapper")[0]
