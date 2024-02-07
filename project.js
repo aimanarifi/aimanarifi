@@ -1,4 +1,4 @@
-import projs from "./projects/projects.json" assert { type: 'json' };
+import {projs} from "./projects/project_list.js" 
 
 //PROJECT HIGHLIGHT
 

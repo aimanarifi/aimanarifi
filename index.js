@@ -1,7 +1,7 @@
 import { CardBinder } from "./card.js";
 
 let smallwidth = getComputedStyle(document.documentElement).getPropertyValue('--smallwidth')
-
+alert("halo")
 //HERO SECTION
 var hero_section = document.getElementById("hero")
 var textWrapper = hero_section.getElementsByClassName("textwrapper")[0]
@@ -21,14 +21,12 @@ window.addEventListener("resize", reposition)
 
 function reposition(){
 
-    console.log('hhmm')
     let minWidth = textWrapper.getClientRects()[0].width + graphics.getClientRects()[0].width
 
     if (hero_section.classList.contains("small-window")){
 
         if (document.documentElement.clientWidth > minWidth){
 
-            console.log("can switch to large screen layout")
             hero_section.classList.remove("small-window")
             graphics.style.transform = "translateX(0px)"
 
@@ -40,7 +38,7 @@ function reposition(){
     } else {
      
         if (minWidth > document.documentElement.clientWidth) {
-            console.log("need to switch to small screen layout")
+
             hero_section.classList.add("small-window")
             graphics.style.transform = `translateX(${document.documentElement.clientWidth - minWidth}px)`
         }
@@ -53,7 +51,7 @@ function reposition(){
 
 var cardWrapper = document.getElementById("card-wrapper")
 
-import projs from "./projects/projects.json" assert { type: 'json' };
+import{ projs }from "./projects/project_list.js"
 
 var cards = []
 
