@@ -1,0 +1,7 @@
+'html.png', 'js.png', 'ruby.png', 'mysql.png', 'java.png', 'python.png,''haskell.png' are created by Freepik
+'css.png' is created by Pixel perfect
+'external-link.png' is created by  Bharat Icon
+'linkedin.png' is created by Google
+'down-arrow.png' is created by Arkinasi
+
+These icons are obtained from www.flaticon.com
