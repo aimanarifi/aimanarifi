@@ -1,7 +1,230 @@
-body {
+section{
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 64px 0px;
 
-    background-color: #0A1128;
-    font-family: Rubik, sans-serif;
-    color: antiquewhite;
-    height: min-content;
+    /*utils, remove to finishup
+    border-width: 1px;
+    border-style: solid;
+    border-color: aliceblue;*/
+
+}
+
+body{
+    margin:0px;
+}
+
+#hero{
+    position: relative;
+    border-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    margin-bottom: 32px;
+}
+
+#hero > .textwrapper{
+    margin-left: 72px;   
+}
+
+#hero > .textwrapper > *{
+    display:block;
+    text-shadow: 2px 1px 3px var(--blue);
+}
+
+#hero h1 {
+    font-family: var(--primary-sserif);
+    font-weight: bold;
+    font-size: 4rem;
+    color: var(--orange);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#hero p {
+    font-family: var(--primary-serif);
+    font-weight: thin;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 0px;
+    margin: 0px;
+}
+
+#hero > img{
+    height: 80dvh;
+}
+
+#hero.small-window {
+    width: auto;
+}
+
+#hero.small-window > img{
+    position: relative;
+    z-index: -1;
+}
+
+
+#projects h1 {
+    display: block;
+    font-family: var(--primary-sserif);
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--white);
+    padding-left: 64px;
+}
+
+#card-wrapper{
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    gap: 18px;
+}
+
+project-card {
+    display:flex;
+    flex-direction: column;
+    width: 256px;
+    height: 341px;
+    padding: 16px;
+    overflow: hidden;
+    border-radius: 26px;
+    background-color: var(--faded-blue);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px;
+
+    /*utils, remove to finishup*/
+    stroke: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+    stroke-width: 1px;
+/*     border-width: 1px;
+    border-style: solid;
+    border-color: ; */
+
+}
+
+project-card img{
+    border-radius: 10px;
+}
+
+project-card p {
+    color: var(--white);
+    font-family: var(--primary-sserif);
+}
+
+#dots {
+    width: 64px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 4px;
+    margin: 8px auto;
+    display: none;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 18px;
+    width: fit-content;
+    margin: 8px auto;
+}
+
+.button > *{
+    padding: 8px;
+    color: var(--blue);
+    font-family: var(--secondary-sserif);
+    font-weight: 2;
+    text-decoration: none;
+
+}
+
+project-card .button{
+    background-color: var(--white);
+    font-family: var(--primary-sserif);
+    margin-right: 0px;
+    margin-top: 60px;
+}
+
+#projects > .button {
+    margin-top: 64px;
+}
+
+
+.misc{
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+.misc .button{
+    margin: 0px;
+    background-color: revert;
+}
+
+.misc .button a{
+    display:inline-flex;
+    color: var(--orange);
+}
+
+.misc .button div{
+    width: 2px;
+    border-radius: 2px;
+    background-color: var(--orange);
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-wrapper img{
+    width: 20px;
+    border-radius: 0px;
+    margin-right: 8px;
+    background-color: #ffffff7f;
+    padding: 6px;
+    border-radius: 50%;
+    overflow: visible;
+}
+
+@media screen and (max-width: 500px) {
+
+    #hero h1{
+        font-size: 2.7rem;
+    }
+
+    #hero p{
+        font-size: 0.75rem;
+    }
+
+    #hero > .textwrapper {
+
+        backdrop-filter: blur(3px);
+        background-image: radial-gradient(#0000000f, #ffffff00);
+        padding: 8px;
+        border-radius: 50px;
+    }
+
+    #card-wrapper{
+        flex-direction: column;
+    }
+
 }

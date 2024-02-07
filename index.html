@@ -9,24 +9,40 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-        <script src="./setting.js"></script>      
-
         <!--stylesheets-->
+        <link rel="stylesheet" href="common.css">
         <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 
-        <!--import file for common header and footer-->
-        <script src="./template.js"></script>        
-              
+        <!--script-->
+        <script type="module" src="./setting.js"></script>
+        <script type="module" src="./index.js"></script>
+
+
     </head>
 
     <body>
+
         <common-header></common-header>
-        <h3>This is the index page</h3>
-        <p>we'll sort this web soon</p>
+
+        <section id="hero">
+            <div class="textwrapper">
+                <p>Hello, it's</p>
+                <h1>Muhammad Kamaludin</h1>
+                <p>fulltime computer science with A.I. student & developer</p>
+            </div>
+            <img src="./assets/hero.png" alt/>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div id="card-wrapper">
+                <!--insert custom card components here-->
+            </div>
+            <div id="dots">
+            </div>
+            <div class="button"><a href="./project.html">see more >> </a></div>
+        </section>
+
         <common-footer></common-footer>
         
     </body>
