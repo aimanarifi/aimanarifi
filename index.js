@@ -8,11 +8,10 @@ var textWrapper = hero_section.getElementsByClassName("textwrapper")[0]
 var graphics = hero_section.getElementsByTagName("img")[0]
 
 //configure initail layout based on screen size
-
 let minWidth = textWrapper.getClientRects()[0].width + graphics.getClientRects()[0].width
 
 if (minWidth > document.documentElement.clientWidth) {
-    console.log("need to switch to small screen layout")
+
     hero_section.classList.add("small-window")
     graphics.style.transform = `translateX(${document.documentElement.clientWidth - minWidth}px)`
 }
