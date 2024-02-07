@@ -15,24 +15,24 @@
   
 @font-face {
     font-family: AsimovPro;
-    src: url("./fonts/asimov-pro-font/AsimovProBlack-8YeB.otf") format("opentype");
+    src: url("./fonts/AsimovProBlack-8YeB.otf") format("opentype");
 }
 
 @font-face {
     font-family: AsimovPro;
     font-weight: bold;
-    src: url("./fonts/asimov-pro-font/AsimovProUltrablack-KR0D.otf") format("opentype");
+    src: url("./fonts/AsimovProUltrablack-KR0D.otf") format("opentype");
 }
 
 @font-face {
     font-family: Montserrat;
-    src: url("./fonts/montserrat-font/MontserratBlack-ZVK6J.otf") format("opentype");
+    src: url("./fonts/MontserratBlack-ZVK6J.otf") format("opentype");
 }
 
 @font-face {
     font-family: Montserrat;
     font-weight: bold;
-    src: url("./fonts/montserrat-font/MontserratBold-DOWZd.ttf") format("truetype");
+    src: url("./fonts/MontserratBold-DOWZd.ttf") format("truetype");
 }
 
 @font-face {
