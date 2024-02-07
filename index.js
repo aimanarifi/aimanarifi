@@ -67,7 +67,8 @@ for (let i = 1; i<=3; i++){
 } 
 
 for (let c of cards){
-
+    //Respond to mouse hover
+   
     c.dom.addEventListener("mouseenter", function(){
 
         for(let d of cards){
@@ -87,6 +88,7 @@ for (let c of cards){
 
         }
     })
+
 }
 
 //attach dot indicator for each card
@@ -98,7 +100,8 @@ for(let i = 0; i < cards.length ; i++){
     dot.classList.add("dot")
 
     dot.addEventListener("click", function(){
-    //display the associated card and change indicator color
+    //display the associated card and 
+    //change indicator color
 
         for(let j = 0; j < cards.length; j++){
             
@@ -127,40 +130,72 @@ for(let i = 0; i < cards.length ; i++){
 
 }
 
-
-
 //show one card at a time and the dot indicators
 //in small screen
 var smallScreenQuery = window.matchMedia(`(max-width: ${smallwidth})`)
 smallScreenQuery.addEventListener("change", adjustCards)
 
+
+var currentCardIndex = 0
 function adjustCards() {
 
     if(smallScreenQuery.matches) {
         
-        //Hide all cards except the first one
-        cards[1].dom.style.display = "none"
-        cards[2].dom.style.display = "none"
-
-        //create a ... card indicator
+        //Hide all cards except the first one &&
+        //light up the first dot indicator
         dots.style.display = "flex"
         let ds = dots.children
-        ds[0].style.backgroundColor = "white"
-        ds[1].style.backgroundColor = "grey"
-        ds[2].style.backgroundColor = "grey"
 
+        for(let i=0; i<cards.length;i++){
+
+            cards[i].dom.style.display =  i==0 ? "flex": "none";
+            ds[i].style.backgroundColor=  i==0 ? "white": "grey";
+        }
 
     } else {
         
+        //revert changes
         cards.forEach((c)=>{
             c.dom.style.display = "flex"
         });
-
-        //revert changes
         dots.style.display = "none"
-        
+        currentCardIndex = 0
+
     }
 
 }
+
+//card wrapper respond to swipe gesture
+var xTouchStart = null
+var xTouchEnd = null
+
+cardWrapper.addEventListener('touchstart', (e) =>{
+    if(document.documentElement.clientWidth > smallwidth.split("px")[0]) {return}
+    xTouchStart = e.changedTouches[0].screenX
+})
+
+cardWrapper.addEventListener('touchend', (e) => {
+    if(document.documentElement.clientWidth > smallwidth.split("px")[0]) {return}
+    xTouchEnd = e.changedTouches[0].screenX
+
+    
+    if (xTouchEnd < xTouchStart && currentCardIndex != 2) {//left
+        console.log('move to right card')
+        currentCardIndex += 1
+    }
+
+    if (xTouchEnd > xTouchStart && currentCardIndex != 0) {//right
+        console.log('move to left card')
+        currentCardIndex -= 1
+    }
+
+    let ds = dots.children
+    for(let i=0; i<cards.length;i++){
+
+        cards[i].dom.style.display =  i==currentCardIndex ? "flex": "none";
+        ds[i].style.backgroundColor=  i==currentCardIndex ? "white": "grey";
+    }
+        
+})
 
 //ABOUT ME SECTION
