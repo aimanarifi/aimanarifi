@@ -4,7 +4,8 @@ export var projs = {
         "description":"This program feeds on the puzzle image as a matrix, detects every letters using  Linear Classifier and find the words. This work is part of univeristy module assignment",
         "date" : "2022",
         "tools": ["Python","Numpy"],
-        "image": "./assets/blank_image.png",
+        "image": "./projects/word_search.png",
+        "imageCount": "3",
         "repo" : "none"
     },
     "2" :{
@@ -13,6 +14,7 @@ export var projs = {
         "date" : "2022",
         "tools": ["Java","JSwing","MySQL"],
         "image": "./projects/build-a-bike.png",
+        "imageCount": "1",
         "repo" : "none"
     },
     "3" :{
@@ -20,15 +22,17 @@ export var projs = {
         "description":"An educational Quiz game intended to assess player's knowledge about the 5 branches of A.I. It features top-down RPG play style, with multiple minigames. Player needs to answer some quizzes to complete the minigames. It also includes text-to-speech API by IBM Watson to read out the quizzes in real time.This work is part of university module assignment",
         "date" : "2023",
         "tools": ["Python","PyGame","Tiled","IBM Watson"],
-        "image": "./assets/blank_image.png",
-        "repo" : "none"
+        "image": "./projects/quiz_game.png",
+        "imageCount": "1",
+        "repo" : "https://github.com/aimanarifi/AI-Quiz-Game"
     },
     "4" :{
         "title":"8-Puzzle Problem Solver",
         "description":"A searching engine for the 8-Puzzle. This program uses Breadth-First Search and A* Algorithm.This work is part of university module assignment",
         "date" : "2022",
         "tools": ["Python"],
-        "image": "./assets/blank_image.png",
+        "image": "./projects/8_puzzle.png",
+        "imageCount": "1",
         "repo" : "https://github.com/aimanarifi/COM1005-Machine-and-Intelligence"
     },
     "5" :{
@@ -37,6 +41,7 @@ export var projs = {
         "date" : "2022",
         "tools": ["Ruby","Sinatra","SQLite"],
         "image": "./assets/blank_image.png",
+        "imageCount": "1",
         "repo" : "https://github.com/aimanarifi/COM1001-Introduction-to-Software-Engineering"
     },
     "6" :{
@@ -44,23 +49,35 @@ export var projs = {
         "description":"A program that simulates the Enigma Machine, as well as capable of finding the Enigma Machine configuration. The implementation is purely declarative and functional. This work is part of university module assignment",
         "date" : "2022",
         "tools": ["Haskell"],
-        "image": "./assets/blank_image.png",
+        "image": "./projects/break_enigma.png",
+        "imageCount": "1",
         "repo" : "none"
     },
     "7" :{
+        "title":"Fitness Data Visualiser",
+        "description":"A GUI-based java program, capable of visualising multiple kind of fitness data e.g. heart rate, steps, distance",
+        "date" : "2022",
+        "tools": ["Java", "JSwing"],
+        "image": "./projects/fitness_data_tracker.png",
+        "imageCount": "1",
+        "repo" : "none"
+    },
+    "8" :{
         "title":"Image render from string",
         "description":"Program that feeds on a string of numbers that represent the pixel of an image. It then decodes them into an image. This work is part of university module assignment",
         "date" : "2021",
         "tools": ["Java"],
-        "image": "./assets/blank_image.png",
+        "image": "./projects/java_duck.png",
+        "imageCount": "1",
         "repo" : "none"
     },
-    "8" :{
+    "9" :{
         "title":"THE First Website",
         "description":"Hello, World!",
         "date" : "2021",
         "tools": ["HTML","CSS","JS"],
-        "image": "./assets/blank_image.png",
+        "image": "./projects/future_gem.png",
+        "imageCount": "2",
         "repo" : "none"
     }
 

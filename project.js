@@ -72,7 +72,7 @@ import { CardBinder } from "./card.js";
 
 let sect = document.querySelector("#project-list")
 
-const PROJ_COUNT = 8
+const PROJ_COUNT = 9
 //separate projects by year
 var years = []
 for(var i = 1; i <= PROJ_COUNT; i++){
