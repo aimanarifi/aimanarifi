@@ -39,7 +39,7 @@ export var projs = {
         "title":"ACME - Forum Platform Prototype",
         "description":"A forum platform for 'ACME' organisation. This platform runs on webserver, and dynamically render all forum discussions stored in the database. It provides different features for regular user, admin, and moderators.This project adopts the Model-View-Controller (MVC) architecture. This work is part of university module assignment",
         "date" : "2022",
-        "tools": ["Ruby","Sinatra","SQLite"],
+        "tools": ["Ruby","Sinatra","HTML","CSS","SQLite"],
         "image": "./assets/blank_image.png",
         "imageCount": "1",
         "repo" : "https://github.com/aimanarifi/COM1001-Introduction-to-Software-Engineering"
