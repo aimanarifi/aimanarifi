@@ -23,9 +23,10 @@ h1, h2 {
     margin-left: 32px;
     border-radius: 10px;
     max-width: revert;
-    max-height: 300px;
-    width: auto;
+    height:  45dvh;
+    width: 35dvw;
     object-fit: cover;
+    background-color: var(--faded-blue);
 
 }
 
@@ -96,6 +97,34 @@ div#tools {
     padding: 8px;
 }
 
+#multi-thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+
+}
+
+#dots {
+    width: fit-content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 4px;
+    margin: 16px auto;
+    display: none;
+}
+
+.dot{
+    height: 8px;
+    width: 8px;
+    margin: 0px 4px;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
 #project-list {
     display:block;
 /*     background-color: #ffffff0d; */
@@ -161,8 +190,11 @@ project-card {
 
 }
 
-project-card img{
+project-card > img{
     border-radius: 10px;
+    width: 255px;
+    height: 200px;
+    object-fit: cover;
 }
 
 project-card p {
@@ -229,8 +261,8 @@ project-card .button{
     #thumbnail{
         display:block;
         margin: 24px auto;
-        max-height: revert;
-        height: auto;
+        width: 60dvw;
+        height: 30dvh;
         align-self: center;
         margin-top: 24px;
     }

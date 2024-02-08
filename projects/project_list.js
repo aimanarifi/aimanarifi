@@ -23,7 +23,7 @@ export var projs = {
         "date" : "2023",
         "tools": ["Python","PyGame","Tiled","IBM Watson"],
         "image": "./projects/quiz_game.png",
-        "imageCount": "1",
+        "imageCount": "4",
         "repo" : "https://github.com/aimanarifi/AI-Quiz-Game"
     },
     "4" :{
@@ -59,7 +59,7 @@ export var projs = {
         "date" : "2022",
         "tools": ["Java", "JSwing"],
         "image": "./projects/fitness_data_tracker.png",
-        "imageCount": "1",
+        "imageCount": "2",
         "repo" : "none"
     },
     "8" :{
