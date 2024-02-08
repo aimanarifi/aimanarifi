@@ -308,5 +308,17 @@ project-card .button{
     #transition img{
         width: 60px;
     }
+
+    project-card > img{
+        width: auto;
+    }
+
+    #project-list {
+        display:block;
+    /*     background-color: #ffffff0d; */
+        margin-left: 32px;
+        margin-right: 0px;
+    }
+
 }
 

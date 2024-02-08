@@ -32,6 +32,7 @@ if(project_id != ''){
     }
 
     multi_thumbnail = p.imageCount > 1
+
     if( multi_thumbnail ){
         //move thumbnail into div show dots indicator
         mainCtn.removeChild(img)
@@ -48,7 +49,6 @@ if(project_id != ''){
 
             dot.classList.add("dot")
             dot.style.backgroundColor = (i == 0) ? 'white' : 'grey'
-            console.log('bjir')
             
             dot.addEventListener("click", function(){
             //display the thumbnail and 
@@ -66,6 +66,37 @@ if(project_id != ''){
         
             dots.appendChild(dot)
         }
+
+        //multi-thumbnail respond to swipe gesture
+        var xTouchStart = null
+        var xTouchEnd = null
+
+        imgs.addEventListener('touchstart', (e) =>{
+            xTouchStart = e.changedTouches[0].screenX
+        })
+
+        imgs.addEventListener('touchend', (e) => {
+            xTouchEnd = e.changedTouches[0].screenX
+            
+            if (xTouchEnd < xTouchStart && currentThumbnailIndex != p.imageCount - 1) {//left
+                console.log('move to right card')
+                currentThumbnailIndex += 1
+            }
+
+            if (xTouchEnd > xTouchStart && currentThumbnailIndex != 0) {//right
+                console.log('move to left card')
+                currentThumbnailIndex -= 1
+            }
+
+            let ds = dots.children
+
+            for(let i=0; i < p.imageCount; i++){
+                
+                img.src =  currentThumbnailIndex == 0 ? p.image : `${p.image.split(".")[1]}${currentThumbnailIndex}.${p.image.split(".")[2]}`
+                ds[i].style.backgroundColor=  i==currentThumbnailIndex? "white": "grey";
+            }
+                
+        })
 
         dots.style.display = 'flex'
     
