@@ -132,15 +132,25 @@ for(let i = 0; i < cards.length ; i++){
 
 //show one card at a time and the dot indicators
 //in small screen
+
+if (document.documentElement.clientWidth <= smallwidth.split('px')[0]){
+    dots.style.display = "flex"
+    let ds = dots.children
+
+    for(let i=0; i<cards.length;i++){
+
+        cards[i].dom.style.display =  i==0 ? "flex": "none";
+        ds[i].style.backgroundColor=  i==0 ? "white": "grey";
+    }
+}
+
 var smallScreenQuery = window.matchMedia(`(max-width: ${smallwidth})`)
 smallScreenQuery.addEventListener("change", adjustCards)
-
 
 var currentCardIndex = 0
 function adjustCards() {
 
     if(smallScreenQuery.matches) {
-        
         //Hide all cards except the first one &&
         //light up the first dot indicator
         dots.style.display = "flex"
@@ -153,7 +163,6 @@ function adjustCards() {
         }
 
     } else {
-        
         //revert changes
         cards.forEach((c)=>{
             c.dom.style.display = "flex"
