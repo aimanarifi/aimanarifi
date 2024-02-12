@@ -68,7 +68,7 @@ export var projs = {
         "date" : "2021",
         "tools": ["Java"],
         "image": "./projects/java_duck.png",
-        "imageCount": "1",
+        "imageCount": "2",
         "repo" : "none"
     },
     "9" :{
