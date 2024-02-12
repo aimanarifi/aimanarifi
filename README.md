@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @aimanarifi
 - 🎓 I’m currently taking BSc Artificial Intelligence and Computer Science at the University of Sheffield
-- 🤗I'm using this as my personal portfolio and still new to this.
+- 🤗 This is the portfolio is live at aimanarifi.github.io
 - 📫 Contact me through email at arifikamal01@gmail.com
 
 <!---
