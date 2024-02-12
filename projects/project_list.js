@@ -14,7 +14,7 @@ export var projs = {
         "date" : "2022",
         "tools": ["Java","JSwing","MySQL"],
         "image": "./projects/build-a-bike.png",
-        "imageCount": "1",
+        "imageCount": "3",
         "repo" : "none"
     },
     "3" :{
