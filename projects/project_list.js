@@ -72,13 +72,57 @@ export var projs = {
         "repo" : "none"
     },
     "9" :{
-        "title":"THE First Website",
+        "title":"My first website",
         "description":"Hello, World!",
         "date" : "2021",
         "tools": ["HTML","CSS","JS"],
         "image": "./projects/future_gem.png",
         "imageCount": "2",
         "repo" : "none"
+    },
+    "10":{
+        "title": "Forest fire simulation with Cellular automata",
+        "description": "This project is an modification/extension of the cellular automata software built in the University of Sheffield (CAPyLE). The updated program enables user to draw a terrain in a grid world, and simulate the fire spread on the given map. It involves multiple variables such as flammability of terrain and wind direction",
+        "date" : "2023",
+        "tools": ["Python", "CAPyLE"],
+        "image": "./projects/forest_fire.png",
+        "imageCount" : "2",
+        "repo" : "none"
+    },
+    "11" :{
+        "title": "DIY Voice Assistant",
+        "description": "A basic voice-based assistant built with ESP32, capable of registering auditory input as well as responding to specific command",
+        "date" : "2024",
+        "tools" : ["C++","Arduino","wit.ai"],
+        "image": "/projects/marvin.jpeg",
+        "imageCount": "1",
+        "repo" : "https://gitlab.com/muhammadkamaludin/com3505-student-2024/-/tree/main/LA2?ref_type=heads"
+    },
+    "12" : {
+        "title": "Plant Library WebApp",
+        "description" : "A dynamic web app that supports plant's photo upload, and identification with user input. In integrates RESTful API to obtain real plant data from DBPedia, and location from Google Map. This web app also incorporates real-time messaging/commenting features with the power of WebSocket.",
+        "date" : "2024",
+        "tools" : ["HTML", "JS", "CSS","NodeJS", "REST API", "MongoDB", "SparQL", "WebSocket"],
+        "image": "/projects/flora_snap.png", 
+        "imageCount" : "6",
+        "repo" : "none"
+    },
+    "13" : {
+        "title": "GridWorld exploration with Reinforcement Learning",
+        "description" : "A comparative study of the RL algorithm:  Q-Learning and SARSA",
+        "date" : "2024",
+        "tools" : ["Python", "NumPy"],
+        "image" : "./assets/blank_image.png", 
+        "imageCount" : "1",
+        "repo" : "none"
+    },
+    "14" : {
+        "title" : "Paint-like web app with Real-time collaboration [IN PROGRESS]",
+        "description" : "", //TODO
+        "date" : "2024",
+        "tools" : ["NextJS", "React", "WebSocket", "MongoDB"],
+        "image" : "/projects/mock_figma.png",
+        "imageCount" : "2",
+        "repo" : "none" //TODO
     }
-
 }

@@ -6,10 +6,10 @@ var mainSect = document.querySelector("#project-highlight")
 var img = mainSect.querySelector("#thumbnail")
 var imgs = mainSect.querySelector("#multi-thumbnail")
 var mainCtn = document.querySelector("#content")
-let project_id = window.location.search.slice(-1)
+let project_id = window.location.search
 var multi_thumbnail = false
 if(project_id != ''){
-
+    project_id = project_id.split("id=")[1]
     let p = projs[project_id]
 
     img.src = p.image
@@ -174,7 +174,7 @@ import { CardBinder } from "./card.js";
 
 let sect = document.querySelector("#project-list")
 
-const PROJ_COUNT = 9
+const PROJ_COUNT = 14
 //separate projects by year
 var years = []
 for(var i = 1; i <= PROJ_COUNT; i++){

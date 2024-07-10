@@ -117,7 +117,11 @@ export class CardBinder {
 
 function fileExists(path){
     let x = new XMLHttpRequest()
-    x.open('HEAD',path,false)
-    x.send()
+    try {
+        x.open('HEAD',path,false)
+        x.send()
+    } catch {
+        return false
+    }
     return x.status == 200
 }
